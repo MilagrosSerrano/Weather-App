@@ -1,0 +1,48 @@
+.welcomeApp{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.polarBear{
+    width: 10rem;
+}
+
+#welcomeTitle{
+    font-size: 2.2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+#subtitle{
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin:1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.description{
+    margin: 0.3rem;
+    text-align: center;
+}
+
+.weatherCheck{
+    border: #057dcd 2px solid; 
+    background-color: #10212f;
+    color: white;
+    border-radius: 0.5rem; 
+    padding: 0.5rem 0.8rem; 
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+.weatherCheck:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.08s ease-in;
+    background-color: #057dcd;
+}
