@@ -1,0 +1,42 @@
+.weather-app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#weather-form{
+    display: flex;
+    padding: 1rem auto;
+    width: 70%;
+    gap: 6px;
+}
+
+#city {
+    border: 4px solid #D1D5DB; 
+    border-radius: 0.5rem; 
+    padding: 0.6rem; 
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+#city:focus {
+    outline: none;
+    border: 4px solid #a1a3a7; 
+}
+
+#search{
+    background-color:#0d86f8ec ; 
+    color: white;
+    border-radius: 0.5rem; 
+    padding: 0.2rem 1rem; 
+    border: none;
+    font-size: 1.1rem;
+}
+
+#search:hover{
+    cursor: pointer;
+    background-color: #3babf6;
+}
