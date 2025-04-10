@@ -46,3 +46,26 @@
     transition: 0.08s ease-in;
     background-color: #057dcd;
 }
+
+@media (max-width: 390px){
+    .polarBear{
+        width: 6rem;
+    }
+    #welcomeTitle{
+        font-size: 1.6rem;
+        margin: 1rem;
+    }
+    #subtitle{
+        font-size: 1.2rem;
+        margin:0.5rem;
+    }
+    .description{
+        font-size: 0.8rem;
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+    }
+    .weatherCheck{
+        font-size: 0.8rem;
+        padding: 0.3rem 0.4rem;
+    }
+}

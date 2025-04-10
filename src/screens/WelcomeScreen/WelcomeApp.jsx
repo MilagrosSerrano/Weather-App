@@ -20,8 +20,6 @@ export const WelcomeApp = () => {
       </p>
       <button className="weatherCheck">Check the weather</button>
       <FooterApp></FooterApp>
-
-      
     </div>
   );
 };
