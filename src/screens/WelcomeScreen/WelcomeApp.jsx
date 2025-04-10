@@ -1,8 +1,14 @@
 import { FooterApp } from "../../footer/FooterApp";
 import "./WelcomeApp.css";
-
 import polarBearImage from "../../assets/polar-bear.png";
+import { useNavigate } from "react-router-dom";
+
 export const WelcomeApp = () => {
+  const navigate = useNavigate()
+
+  const openWeather = () => {
+    navigate("weather");
+  }
   return (
     <div className="welcomeApp">
       <img src={polarBearImage} alt="polar-bear" className="polarBear" />
@@ -18,7 +24,7 @@ export const WelcomeApp = () => {
         Just type the name of the place where you live, we'll take care of the
         rest ☺️
       </p>
-      <button className="weatherCheck">Check the weather</button>
+      <button className="weatherCheck" onClick={openWeather}>Check the weather</button>
       <FooterApp></FooterApp>
     </div>
   );
