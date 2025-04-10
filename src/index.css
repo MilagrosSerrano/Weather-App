@@ -11,5 +11,9 @@
 *{
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     overflow: auto;
+=======
+    overflow: hidden;
+>>>>>>> 8e9fae4d720862fc8c582b9f8bfd1ed96a237ddf
 }
