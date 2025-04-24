@@ -4,6 +4,9 @@ import { fetchData } from "../../hooks/fetchData";
 import { searchCityWeather } from "../../hooks/searchCityWeather";
 import descriptions from "../../assets/descriptions.json";
 import { FooterApp } from "../../footer/FooterApp";
+import backBlue from "../../assets/icon-back-blue.png";
+import backWhite from "../../assets/icon-back-white.png";
+import { useNavigate } from "react-router-dom";
 
 export const WeatherApp = () => {
   const [inputText, setInputText] = useState("");
@@ -27,6 +30,11 @@ export const WeatherApp = () => {
     }
   }, [weatherResults]);
 
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate("/");
+  }
 
   const selectedCity = async (event) => {
     // Extract the city name from the text content that contains the city and country
@@ -92,6 +100,7 @@ export const WeatherApp = () => {
         weatherResults.length == 0 ? "searchBarCenter" : "searchBarTop"
       }`}
     >
+      <button id="goBackBtn" onClick={handleClick}> <img src={backBlue} alt="back-btn" id="arrowBtn"/>Go Back</button>
       <h1>Weather App</h1>
       <form id="weather-form" onSubmit={handleSubmit}>
         <input
@@ -129,11 +138,11 @@ export const WeatherApp = () => {
           <h3 id="cityName">{city}</h3>
              {weatherDescription && (
       <>
-        <img
+        {weatherDescription.image && (<img
           id="weatherImage"
-          src={weatherDescription.image || ""}
+          src={weatherDescription.image}
           alt={weatherDescription.description || "No weather condition available"}
-        />
+        />)}
         <h3 id="cardClimate">
           {weatherDescription.description || "No description available"}
         </h3>
