@@ -5,7 +5,6 @@ import { searchCityWeather } from "../../hooks/searchCityWeather";
 import descriptions from "../../assets/descriptions.json";
 import { FooterApp } from "../../footer/FooterApp";
 import backBlue from "../../assets/icon-back-blue.png";
-import backWhite from "../../assets/icon-back-white.png";
 import { useNavigate } from "react-router-dom";
 
 export const WeatherApp = () => {
