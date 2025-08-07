@@ -1,4 +1,3 @@
--Reacondicionar el btn go back (font thicker tmb flecha).
 -Rediseñar interfaz de datos:
     -Fondo del color acorde al clima actual y añadir encima animación de acuerdo a la caracteristica más importante del momento (ej: dia ventoso -> nubes con movimiento)
 
