@@ -4,7 +4,7 @@ import { fetchData } from "../../hooks/fetchData";
 import { searchCityWeather } from "../../hooks/searchCityWeather";
 import descriptions from "../../assets/descriptions.json";
 import { FooterApp } from "../../footer/FooterApp";
-import backBlue from "../../assets/icon-back-blue.png";
+import backBlue from "../../assets/back-blue.png";
 import { useNavigate } from "react-router-dom";
 
 export const WeatherApp = () => {
@@ -112,7 +112,7 @@ export const WeatherApp = () => {
         weatherResults.length == 0 ? "searchBarCenter" : "searchBarTop"
       }`}
     >
-      <button id="goBackBtn" onClick={handleClick}> <img src={backBlue} alt="back-btn" id="arrowBtn"/>Go Back</button>
+      <button id="goBackBtn" onClick={handleClick}> <img src={backBlue} alt="back-btn" id="arrowBtn"/></button>
       <h1>Weather App</h1>
       <form id="weather-form" onSubmit={handleSubmit}>
         <input

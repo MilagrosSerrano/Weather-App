@@ -1,12 +1,12 @@
 #goBackBtn{
-  border-radius: 0.5rem;
+  border-radius: 100% ;
   padding: 0.5rem;
   border: 2px solid #0d86f8ec;
   background-color: #10212f;
   color: #0d86f8ec;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 0.1rem;
   position: absolute;
   top: 0.8rem;
@@ -21,7 +21,7 @@
 }
 
 #goBackBtn:hover #arrowBtn {
-  content: url("../../assets/icon-back-white.png");
+  content: url("../../assets/back-white.png");
 }
 
 #arrowBtn{
