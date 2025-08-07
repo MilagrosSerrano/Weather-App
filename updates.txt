@@ -1,4 +1,4 @@
-- Fijar letra W y nombre al centro del eje x y luego añadir borde circular que gire. probar usar flexbox o index-z para alinearlos
+- descargar imagenes de canva en mejor resulución y actualizarlas.
 -Reacondicionar el btn go back (font thicker tmb flecha).
 -Rediseñar interfaz de datos:
     -Fondo del color acorde al clima actual y añadir encima animación de acuerdo a la caracteristica más importante del momento (ej: dia ventoso -> nubes con movimiento)
