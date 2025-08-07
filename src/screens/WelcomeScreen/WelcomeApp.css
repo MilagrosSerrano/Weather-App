@@ -1,32 +1,63 @@
 .welcomeApp{
-    height: 100%;
+    height: 100dvh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 10%;
+    overflow: hidden;
 }
 
-.polarBear{
-    width: 6rem;
+.fullLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-8%;
+    height: 400px;
+    width: 100%;
+    margin-top: 1% ;
+}
+
+#logo{
+    position: absolute;
+    top: 0%;
+    left: 14%;
+    height: 800px;
+}
+
+#logoOutline{
+    position: absolute;
+    top: -20%;
+    height: 1000px;
+}
+
+.mainDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
 }
 
 #welcomeTitle{
-    font-size: 1.6rem;
-        margin: 1rem;
+    font-size: 2rem;
     text-align: center;
+    padding: 0.5rem;
 }
 
 #subtitle{
-    font-size: 1.2rem;
-    margin:0.5rem;
-    font-weight: normal;
+    font-size: 1.6rem;
+    padding: 0.3rem;
+    font-weight: bold;
     padding-bottom: 1rem;
     text-align: center;
 }
 
 .description{
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-right: 2.5rem;
     margin-left: 2.5rem;
     margin: 0.3rem;
@@ -50,26 +81,3 @@
     background-color: #057dcd;
 }
 
-
-@media (min-width: 800px){
-    .polarBear{
-        width: 10rem;
-    }
-    #welcomeTitle{
-        font-size: 2.2rem;
-        margin: 2rem;
-    }
-    #subtitle{
-        font-size: 1.8rem;
-        margin:1rem;
-    }
-    .description{
-        font-size: 1rem;
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
-    }
-    .weatherCheck{
-        padding: 0.5rem 0.8rem; 
-        font-size: 1rem;
-    }
-}

@@ -1,0 +1,14 @@
+- Fijar letra W y nombre al centro del eje x y luego añadir borde circular que gire. probar usar flexbox o index-z para alinearlos
+-Reacondicionar el btn go back (font thicker tmb flecha).
+-Rediseñar interfaz de datos:
+    -Fondo del color acorde al clima actual y añadir encima animación de acuerdo a la caracteristica más importante del momento (ej: dia ventoso -> nubes con movimiento)
+
+    -Nombre de la ciudad y temp en grande.
+
+    -añadir colapsable nav bar para seleccionar las caracteristicas que se quieren ver en pantalla (por default: temp, nombre breve descripción y recomendación de ropa)
+
+    -diseñar cards para otros aspectos como viento, presión, humedad, precipitación 
+
+    -si el usuario permite acceso a la ubicación, mostrar pop up que diga ¿Desea ver el clima de : …? con botón de aceptar y cancelar uno en azul y otro en rojo
+
+    -si acepta la ubicación, directamente se envia a la api long y lat para los resultados, caso contrario llevar a la barra de búsqueda.

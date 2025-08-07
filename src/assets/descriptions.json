@@ -2,7 +2,7 @@
 	"0":{
 		"day":{
 			"description":"Sunny",
-			"image":"http://openweathermap.org/img/wn/01d@2x.png"
+			"image":"./icons/sunny.png"
 		},
 		"night":{
 			"description":"Clear",

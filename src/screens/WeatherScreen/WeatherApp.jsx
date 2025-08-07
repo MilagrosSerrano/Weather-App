@@ -35,6 +35,19 @@ export const WeatherApp = () => {
     navigate("/");
   }
 
+  if ("geolocation" in navigator){
+    console.log(navigator.geolocation.getCurrentPosition(
+      (position) => {
+        console.log(position.coords);
+      },
+      (error) => {
+        console.error("Error getting the location: ", error.message)
+      }
+    ));
+  }else{
+    console.log("Geolocation not available");
+  }
+
   const selectedCity = async (event) => {
     // Extract the city name from the text content that contains the city and country
     const cityName = event.target.textContent.split(",")[0].trim();
