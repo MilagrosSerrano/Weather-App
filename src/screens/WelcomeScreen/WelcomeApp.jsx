@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 export const WelcomeApp = () => {
   useEffect(() => {
-    window.addEventListener('DOM Content Loaded', ()=>{
+    window.addEventListener('DOM Content Loaded', () => {
     })
     gsap.to("#logoOutline", { rotation: 360, repeat:-1, repeatDelay:0, duration:40, ease:"none"});
       

@@ -1,3 +1,6 @@
+/* styling for 1920px width 1080px height */
+
+
 .welcomeApp{
     height: 100dvh;
     width: 100%;
@@ -22,15 +25,15 @@
 
 #logo{
     position: absolute;
-    top: 0%;
-    left: 14%;
-    height: 800px;
+    top: -10%;
+    left: 15%;
+    height: 600px;
 }
 
 #logoOutline{
     position: absolute;
-    top: -20%;
-    height: 1000px;
+    top: -25%;
+    height: 700px;
 }
 
 .mainDescription{
@@ -39,7 +42,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 #welcomeTitle{
