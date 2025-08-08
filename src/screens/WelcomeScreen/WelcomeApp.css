@@ -2,12 +2,12 @@
 
 
 .welcomeApp{
-    height: 100dvh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 10%;
     overflow: hidden;
 }
@@ -18,22 +18,22 @@
     justify-content: center;
     position: relative;
     top:-8%;
-    height: 400px;
-    width: 100%;
-    margin-top: 1% ;
+    width: 650px;
+    height: 450px;
 }
 
 #logo{
     position: absolute;
-    top: -10%;
-    left: 15%;
-    height: 600px;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 #logoOutline{
     position: absolute;
-    top: -25%;
-    height: 700px;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .mainDescription{
@@ -41,7 +41,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
     margin-bottom: 1%;
 }
 
@@ -72,8 +71,7 @@
     background-color: #10212f;
     color: white;
     border-radius: 0.5rem; 
-    font-size: 0.8rem;
-    padding: 0.3rem 0.4rem;
+    padding: 0.5rem 0.7rem;
     margin: 2rem;
 }
 
@@ -84,3 +82,34 @@
     background-color: #057dcd;
 }
 
+@media (max-width: 850px){
+    .weatherCheck{
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 750px){
+    .welcomeApp{
+        gap: 5%;
+    }
+    .fullLogo{
+        width: 500px;
+        height: 400px;
+    }
+    #welcomeTitle{
+        font-size: 1.5rem;
+    }
+    #subtitle{
+        font-size: 1.2rem;
+    }
+    .description{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 550px){
+    .fullLogo{
+        width: 400px;
+        height: 300px;
+    }
+}
