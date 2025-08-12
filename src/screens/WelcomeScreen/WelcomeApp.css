@@ -1,6 +1,3 @@
-/* styling for 1920px width 1080px height */
-
-
 .welcomeApp{
     height: 100%;
     width: 100%;
@@ -82,13 +79,8 @@
     background-color: #057dcd;
 }
 
-@media (max-width: 850px){
-    .weatherCheck{
-        margin: 1rem;
-    }
-}
 
-@media (max-width: 750px){
+@media (max-width: 1920px){
     .welcomeApp{
         gap: 5%;
     }
@@ -105,6 +97,7 @@
     .description{
         font-size: 0.9rem;
     }
+
 }
 
 @media (max-width: 550px){

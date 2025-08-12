@@ -35,17 +35,20 @@ export const WeatherApp = () => {
     navigate("/");
   }
 
-  if ("geolocation" in navigator){
-    console.log(navigator.geolocation.getCurrentPosition(
-      (position) => {
-        console.log(position.coords);
-      },
-      (error) => {
-        console.error("Error getting the location: ", error.message)
+  const getLocation =  async () => {
+    if ("geolocation" in navigator) {
+      try {
+        const position = await new Promise((resolve, reject) => {
+          navigator.geolocation.getCurrentPosition(resolve, reject);
+        });
+        console.log(position.coords.latitude);
+        console.log(position.coords.longitude);
+      } catch (error) {
+        console.error("Error getting the location: ", error.message);
       }
-    ));
-  }else{
-    console.log("Geolocation not available");
+    } else {
+      console.log("Geolocation not available");
+    }
   }
 
   const selectedCity = async (event) => {
@@ -113,6 +116,14 @@ export const WeatherApp = () => {
       }`}
     >
       <button id="goBackBtn" onClick={handleClick}> <img src={backBlue} alt="back-btn" id="arrowBtn"/></button>
+      <div id="accessLocation">
+        <h2>¿Desea ver la ubicación?</h2>
+        <div id="btnsDecision">
+        <button id="accept">Accept</button>
+        <button id="decline">Decline</button>
+        </div>
+          
+      </div>
       <h1>Weather App</h1>
       <form id="weather-form" onSubmit={handleSubmit}>
         <input
